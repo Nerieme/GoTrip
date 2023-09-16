@@ -34,6 +34,7 @@ body {
 /* HEADER */
 
 .header {
+  overflow: hidden;
   position: relative;
   min-height: 940px;
   padding-top: 44px;
@@ -61,8 +62,28 @@ body {
   margin-bottom: 86px;
 }
 
+.header__row {
+  display: flex;
+}
+
 .header__content {
+  position: relative;
   max-width: 592px;
+  z-index: 1;
+}
+
+.header__img {
+  position: relative;
+  flex-grow: 1;
+}
+
+.header__img img {
+  position: absolute;
+  top: -180px;
+  right: -100px;
+  max-width: unset;
+  width: 894px;
+  height: 940px;
 }
 
 /* NAV */
@@ -136,6 +157,51 @@ body {
 }
 
 .btn:active {
+  position: relative;
+  top: 1px;
+  background: linear-gradient(130deg, #FF584E 15.57%, #FF584E 95.03%), #FFF;
+}
+
+/* HEADER__CONTENT */
+
+.header__bage {
+  margin-bottom: 7px;
+  display: inline-block;
+  padding: 11px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+}
+
+.header__title {
+  margin-bottom: 30px;
+  font-size: 55px;
+}
+
+.header__text {
+  margin-bottom: 68px;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header__btn {
+  display: inline-block;
+  padding: 27px 48px;
+  background: linear-gradient(130deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFF;
+  border-radius: 27px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.header__btn:hover {
+  color: rgb(245, 233, 127);
+  transition: color 0.2s ease-in;
+}
+
+.header__btn:active {
   position: relative;
   top: 1px;
   background: linear-gradient(130deg, #FF584E 15.57%, #FF584E 95.03%), #FFF;
